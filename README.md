@@ -88,7 +88,7 @@ In the following example we are excluding React and Lodash:
 
 - [x] Do the getting started
 - [x] Implement the library
-- [ ] Add closing effect
+- [x] Add closing effect
 - [ ] Add memory cookies
 - [ ] Update the licence
 - [ ] Update the readme

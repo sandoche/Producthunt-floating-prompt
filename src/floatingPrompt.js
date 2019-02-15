@@ -32,12 +32,12 @@ export default function floatingPrompt(name,
     text-align: center;
     white-space: nowrap;
     box-shadow: 0 8px 24px rgba(32,43,54,.12);
-    transition: all .15s ease;
+    transition: all .3s ease;
     margin-top: 16px;
     font-size: 14px;
   }
   .ph-button:hover {
-    box-shadow: 0 4px 24px rgba(32,43,54,.3);
+    box-shadow: 0 6px 24px rgba(32,43,54,.4);
   }
   .producthunt {
     position: fixed;
@@ -52,6 +52,8 @@ export default function floatingPrompt(name,
     font-size: 16px;
     color: #65638f;
     font-family: sans-serif;
+    opacity: 1;
+    transition: all .3s ease;
   }
   .producthunt__close {
     position: absolute;
@@ -89,7 +91,10 @@ function addClosingEvent(id) {
   const producthuntCloseButton = document.getElementById(`${id}-close`);
 
   producthuntCloseButton.addEventListener('click', () => {
-    producthuntModal.parentNode.removeChild(producthuntModal);
+    producthuntModal.style.opacity = 0;
+    setTimeout(() => {
+      producthuntModal.parentNode.removeChild(producthuntModal);
+    }, 300);
   });
 }
 
