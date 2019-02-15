@@ -3,7 +3,7 @@
 ⚡️ Invite your users to support you on product hunt with this floating prompt (and mobile responsive).
 
 ## Demo
-Coming soon.
+Check out the demo: https://producthuntprompt.learn.uno/
 
 ## How to use
 The ProductHunt Floating Prompt is very easy to use, just copy paste the following code or use the npm package.
