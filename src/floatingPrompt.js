@@ -18,7 +18,7 @@ export default function floatingPrompt(options) {
   .ph-button {
     background: linear-gradient(65deg,${colorOne},${colorTwo});
     font-family: sans-serif;
-    color: #fff;
+    color: #fff !important;
     display: block;
     letter-spacing: 0;
     font-weight: 700;
