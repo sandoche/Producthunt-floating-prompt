@@ -1,16 +1,17 @@
-export default function floatingPrompt(name,
-  url,
-  text = `Hi, do you like ${name} ? Don't forget to show your love on Product Hunt 🚀`,
-  buttonText = `${name} on Product Hunt`,
-  width = '300px',
-  bottom = '32px',
-  right = '32px',
-  left = 'unset',
-  colorOne = '#da552f',
-  colorTwo = '#ea8e39',
-  saveInCookies = true
-) {
+export default function floatingPrompt(options) {
+
   /* eslint-disable */
+  const name = options.name;
+  const url = options.url;
+  const text = options.text ? options.text : `Hi, do you like ${name} ? Don't forget to show your love on Product Hunt 🚀`;
+  const buttonText = options.buttonText ? options.buttonText : `${name} on Product Hunt`;
+  const width = options.width ? options.width : '300px';
+  const bottom = options.bottom ? options.bottom : '32px';
+  const right = options.right ? options.right : '32px';
+  const left = options.left ? options.left : 'unset';
+  const colorOne = options.colorOne ? options.colorOne : '#da552f';
+  const colorTwo = options.colorTwo ? options.colorTwo : '#ea8e39';
+  const saveInCookies = options.saveInCookies ? options.saveInCookies : true;
   const id = `product-hunt-${name.toLowerCase().replace(/[^a-zA-Z]+/g, "-")}`;
   const html = `<div class="producthunt" id="${id}"> <span class="producthunt__close" id="${id}-close">×</span><p class="producthunt__text">${text}</p> <a href="${url}" class="ph-button" target="_blank">${buttonText}</a></div>`;
   const css = `

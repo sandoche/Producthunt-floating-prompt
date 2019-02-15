@@ -90,7 +90,7 @@ In the following example we are excluding React and Lodash:
 - [x] Implement the library
 - [x] Add closing effect
 - [x] Add memory cookies
-- [ ] Make the options more convenients
+- [x] Make the options more convenients
 - [ ] Push position as style
 - [ ] Update the licence
 - [ ] Update the readme
