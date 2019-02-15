@@ -91,7 +91,7 @@ In the following example we are excluding React and Lodash:
 - [x] Add closing effect
 - [x] Add memory cookies
 - [x] Make the options more convenients
-- [ ] Push position as style
+- [x] Push position as style
 - [ ] Update the licence
 - [ ] Update the readme
 - [ ] Make a demo website
