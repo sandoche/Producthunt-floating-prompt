@@ -1,35 +1,33 @@
 {
-  "name": "webpack-library-starter",
-  "version": "1.0.2",
-  "description": "Produce universal library with webpack and es6",
-  "main": "lib/webpack-library-starter.js",
+  "name": "producthunt-floating-prompt",
+  "version": "1.0.0",
+  "description": "⚡️ Invite your users to support you on product hunt with this floating prompt",
+  "main": "lib/producthunt-floating-prompt.js",
   "scripts": {
     "build": "webpack --env dev && webpack --env build && npm run test",
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "mocha --require babel-register --colors ./test/*.spec.js",
     "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js",
     "test:cover": "cross-env NODE_ENV=test nyc mocha --require babel-register --colors test/*.js",
-    "repl": "node -i -e \"$(< ./lib/webpack-library-starter.js)\""
+    "repl": "node -i -e \"$(< ./lib/producthunt-floating-prompt.js)\""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/krasimir/webpack-library-starter.git"
+    "url": "https://github.com/sandoche/Producthunt-floating-prompt.git"
   },
   "keywords": [
-    "webpack",
-    "es6",
-    "starter",
-    "library",
-    "universal",
-    "umd",
-    "commonjs"
+    "producthunt",
+    "modal",
+    "ui",
+    "floating",
+    "prompt"
   ],
-  "author": "Krasimir Tsonev",
+  "author": "Sandoche ADITTANE",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/krasimir/webpack-library-starter/issues"
+    "url": "https://github.com/sandoche/Producthunt-floating-prompt/issues"
   },
-  "homepage": "https://github.com/krasimir/webpack-library-starter",
+  "homepage": "https://producthuntfloatingprompt.learn.uno",
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.51",
     "@babel/core": "^7.0.0-beta.51",
