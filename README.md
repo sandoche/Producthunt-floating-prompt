@@ -83,3 +83,11 @@ In the following example we are excluding React and Lodash:
   }
 }
 ```
+
+## To do
+
+- [ ] Do the getting started
+- [ ] Implement the library
+- [ ] Update the licence
+- [ ] Update the readme
+- [ ] Make a demo website
