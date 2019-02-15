@@ -87,7 +87,9 @@ In the following example we are excluding React and Lodash:
 ## To do
 
 - [x] Do the getting started
-- [ ] Implement the library
+- [x] Implement the library
+- [ ] Add closing effect
+- [ ] Add memory cookies
 - [ ] Update the licence
 - [ ] Update the readme
 - [ ] Make a demo website
