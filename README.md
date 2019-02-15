@@ -69,18 +69,5 @@ FloatingPrompt(options);
 
 * `yarn build` or `npm run build` - produces production version of your library under the `lib` folder
 * `yarn dev` or `npm run dev` - produces development version of your library and runs a watcher
-* `yarn test` or `npm run test` - well ... it runs the tests :)
+* `yarn test` or `npm run test` - it runs the tests :)
 * `yarn test:watch` or `npm run test:watch` - same as above but in a watch mode
-
-## To do
-
-- [x] Do the getting started
-- [x] Implement the library
-- [x] Add closing effect
-- [x] Add memory cookies
-- [x] Make the options more convenients
-- [x] Push position as style
-- [x] Update the licence
-- [ ] Deploy npm package
-- [ ] Update the readme
-- [ ] Make a demo website
