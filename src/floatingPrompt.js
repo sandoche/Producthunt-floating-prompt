@@ -7,7 +7,8 @@ export default function floatingPrompt(name,
   right = '32px',
   left = 'unset',
   colorOne = '#da552f',
-  colorTwo = '#ea8e39'
+  colorTwo = '#ea8e39',
+  saveInCookies = true
 ) {
   /* eslint-disable */
   const id = `product-hunt-${name.toLowerCase().replace(/[^a-zA-Z]+/g, "-")}`;
@@ -73,9 +74,12 @@ export default function floatingPrompt(name,
     }
   }`;
   
-  createModal(html);
-  addClosingEvent(id);
-  addStyle(css);
+  
+  if(!window.localStorage.getItem(id) || saveInCookies == false) {
+    createModal(html);
+    addClosingEvent(id);
+    addStyle(css);
+  }
   /* eslint-enable */
 }
 
@@ -94,6 +98,7 @@ function addClosingEvent(id) {
     producthuntModal.style.opacity = 0;
     setTimeout(() => {
       producthuntModal.parentNode.removeChild(producthuntModal);
+      window.localStorage.setItem(id, true);
     }, 300);
   });
 }

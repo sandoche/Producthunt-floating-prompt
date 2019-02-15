@@ -89,7 +89,9 @@ In the following example we are excluding React and Lodash:
 - [x] Do the getting started
 - [x] Implement the library
 - [x] Add closing effect
-- [ ] Add memory cookies
+- [x] Add memory cookies
+- [ ] Make the options more convenients
+- [ ] Push position as style
 - [ ] Update the licence
 - [ ] Update the readme
 - [ ] Make a demo website
