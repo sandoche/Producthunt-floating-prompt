@@ -7,7 +7,7 @@ Coming soon.
 
 ## How to use
 The ProductHunt Floating Prompt is very easy to use, just copy paste the following code or use the npm package.
-A few customization are availables check the options below.
+A few customization such as localstorage to appear only once, color, position are availables check the options below.
 
 ### Easy way (using the JSDelivr CDN)
 Just add this code to your html page:
@@ -34,8 +34,8 @@ FloatingPrompt({name:'GitNews', url:'https://www.producthunt.com/posts/gitnews'}
 Here are the option availables:
 ```javascript
 
-const options = {
-  name: 'My super product'
+var options = {
+  name: 'My super product',
   url: 'https://www.producthunt.com/posts/my-super-product',
   text: 'My customized text', // default: Hi, do you like ${name} ? Don't forget to show your love on Product Hunt 🚀
   buttonText: 'My customized button', // default: ${name} on Product Hunt
