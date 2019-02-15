@@ -6,8 +6,16 @@
   <body>
     <script src="../lib/producthunt-floating-prompt.js"></script>
     <script>
-      FloatingPrompt({name:'GitNews', url:'https://www.producthunt.com/posts/gitnews'});
-      FloatingPrompt({name:'Sandoche', url:'https://www.sandoche.com', text:'Do you know Sandoche?', buttonText:'Visit Sandoche\'s Website now'});
+      FloatingPrompt({name:'GitNews', url:'https://www.producthunt.com/posts/gitnews', saveInCookies: false});
+      FloatingPrompt({
+        name:'Sandoche',
+        url:'https://www.sandoche.com',
+        text:'Do you know Sandoche?',
+        buttonText:'Visit Sandoche\'s Website now',
+        left: '32px',
+        bottom: '128px',
+        saveInCookies: false
+      });
     </script>
   </body>
 </html>

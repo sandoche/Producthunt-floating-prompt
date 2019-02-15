@@ -11,7 +11,7 @@ export default function floatingPrompt(options) {
   const left = options.left ? options.left : 'unset';
   const colorOne = options.colorOne ? options.colorOne : '#da552f';
   const colorTwo = options.colorTwo ? options.colorTwo : '#ea8e39';
-  const saveInCookies = options.saveInCookies ? options.saveInCookies : true;
+  const saveInCookies = typeof options.saveInCookies  === 'boolean' ? options.saveInCookies : true;
   const id = `product-hunt-${name.toLowerCase().replace(/[^a-zA-Z]+/g, "-")}`;
   const html = `<div class="producthunt" id="${id}"> <span class="producthunt__close" id="${id}-close">×</span><p class="producthunt__text">${text}</p> <a href="${url}" class="ph-button" target="_blank">${buttonText}</a></div>`;
   const css = `
@@ -43,14 +43,10 @@ export default function floatingPrompt(options) {
   }
   .producthunt {
     position: fixed;
-    bottom: ${bottom};
-    right: ${right};
-    left: ${left};
     background-color: #fff;
     padding: 24px;
     box-shadow: 0 4px 16px rgba(16, 31, 59, 0.16);
     z-index: 10;
-    width: ${width};
     font-size: 16px;
     color: #65638f;
     font-family: sans-serif;
@@ -68,16 +64,18 @@ export default function floatingPrompt(options) {
   }
   @media (max-width: 768px) {
     .producthunt {
-      max-width: 100%;
-      bottom: 0;
-      right: 0;
-      box-shadow: 0 -4px 16px rgba(16, 31, 59, 0.16);
+      width: calc(100% - 48px) !important;
+      bottom: 0 !important;
+      right: 0 !important;
+      left: 0 !important;
+      box-shadow: 0 -4px 16px rgba(16, 31, 59, 0.16) !important;
     }
   }`;
   
   
   if(!window.localStorage.getItem(id) || saveInCookies == false) {
     createModal(html);
+    setStyle(id, bottom, left, right, width);
     addClosingEvent(id);
     addStyle(css);
   }
@@ -89,6 +87,15 @@ function createModal(html) {
 
   prompt.innerHTML = html;
   document.body.appendChild(prompt);
+}
+
+function setStyle(id, bottom, left, right, width) {
+  const producthuntModal = document.getElementById(id);
+
+  producthuntModal.style.bottom = bottom;
+  producthuntModal.style.left = left ? left : 'unset';
+  producthuntModal.style.right = right ? right : 'unset';
+  producthuntModal.style.width = width;
 }
 
 function addClosingEvent(id) {
