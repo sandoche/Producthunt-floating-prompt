@@ -33,7 +33,6 @@ FloatingPrompt({name:'GitNews', url:'https://www.producthunt.com/posts/gitnews'}
 ## Options
 Here are the option availables:
 ```javascript
-
 var options = {
   name: 'My super product',
   url: 'https://www.producthunt.com/posts/my-super-product',
