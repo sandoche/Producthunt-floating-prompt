@@ -1,32 +1,24 @@
 /* global describe, it, before */
 
 import chai from 'chai';
-import {Cat, Dog} from '../lib/webpack-library-starter.js';
+import FloatingPrompt from '../lib/producthunt-floating-prompt.js';
 
+chai.use(require('chai-dom'));
 chai.expect();
 
 const expect = chai.expect;
 
-let lib;
+// mocking local storage
+global.window = {
+  localStorage: {
+    getItem: function(id) {
+      return true;
+    }
+  }
+};
 
-describe('Given an instance of my Cat library', () => {
+describe('Given an instance of FloatingPrompt', () => {
   before(() => {
-    lib = new Cat();
-  });
-  describe('when I need the name', () => {
-    it('should return the name', () => {
-      expect(lib.name).to.be.equal('Cat');
-    });
-  });
-});
-
-describe('Given an instance of my Dog library', () => {
-  before(() => {
-    lib = new Dog();
-  });
-  describe('when I need the name', () => {
-    it('should return the name', () => {
-      expect(lib.name).to.be.equal('Dog');
-    });
+    FloatingPrompt({name:'GitNews', url:'https://www.producthunt.com/posts/gitnews'});
   });
 });

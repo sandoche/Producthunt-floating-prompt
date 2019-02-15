@@ -1,3 +1,8 @@
-import Cat from './cat.js';
-import Dog from './dog.js';
-export { Dog, Cat };
+import FloatingPrompt from './floatingPrompt.js';
+export default FloatingPrompt;
+
+/* eslint-disable */
+(function(window){
+   window.FloatingPrompt = FloatingPrompt;
+ })(window)
+ /* eslint-enable */
