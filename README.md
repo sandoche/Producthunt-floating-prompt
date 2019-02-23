@@ -1,9 +1,15 @@
-# ProductHunt Floating Prompt
+![Logo](logo.gif "Logo")
+
+# ProductHunt Floating Prompt ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 ⚡️ Invite your users to support you on product hunt with this floating prompt (and mobile responsive).
 
 ## Demo
-Check out the demo: https://producthuntprompt.learn.uno/
+Check out the demo in these websites: 
+- https://producthuntprompt.learn.uno/
+- https://git.news
+- https://gitnews.learn.uno
+- https://textblast.learn.uno
 
 ## How to use
 The ProductHunt Floating Prompt is very easy to use, just copy paste the following code or use the npm package.
@@ -56,3 +62,11 @@ FloatingPrompt(options);
 * `yarn dev` or `npm run dev` - produces development version of your library and runs a watcher
 * `yarn test` or `npm run test` - it runs the tests :)
 * `yarn test:watch` or `npm run test:watch` - same as above but in a watch mode
+
+## Buy me a beer 🍺
+If you like this project, feel free to donate:
+* Paypal: https://www.paypal.me/kanbanote
+* Bitcoin: 19JiNZ1LkMaz57tewqJaTg2hQWH4RgW4Yp
+* Ethereum: 0xded81fa4624e05339924355fe3504ba9587d5419
+* Monero: 43jqzMquW2q989UKSrB2YbeffhmJhbYb2Yxu289bv7pLRh4xVgMKj5yTd52iL6x1dvCYs9ERg5biHYxMjGkpSTs6S2jMyJn
+* Motive: MOTIV-25T5-SD65-V7LJ-BBWRD (Get Motive Now: https://motive.network)
