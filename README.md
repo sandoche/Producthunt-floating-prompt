@@ -63,7 +63,7 @@ FloatingPrompt(options);
 * `yarn test` or `npm run test` - it runs the tests :)
 * `yarn test:watch` or `npm run test:watch` - same as above but in a watch mode
 
-## Buy me a beer
+## Buy me a beer 🍺
 If you like this project, feel free to donate:
 * Paypal: https://www.paypal.me/kanbanote
 * Bitcoin: 19JiNZ1LkMaz57tewqJaTg2hQWH4RgW4Yp
