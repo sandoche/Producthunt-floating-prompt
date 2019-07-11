@@ -12,8 +12,9 @@ export default function floatingPrompt(options) {
   const colorOne = options.colorOne ? options.colorOne : '#da552f';
   const colorTwo = options.colorTwo ? options.colorTwo : '#ea8e39';
   const saveInCookies = typeof options.saveInCookies  === 'boolean' ? options.saveInCookies : true;
+  const target = options.target ? options.target : '_blank';
   const id = `product-hunt-${name.toLowerCase().replace(/[^a-zA-Z]+/g, "-")}`;
-  const html = `<div class="producthunt" id="${id}"> <span class="producthunt__close" id="${id}-close">×</span><p class="producthunt__text">${text}</p> <a href="${url}" class="ph-button" target="_blank">${buttonText}</a></div>`;
+  const html = `<div class="producthunt" id="${id}"> <span class="producthunt__close" id="${id}-close">×</span><p class="producthunt__text">${text}</p> <a href="${url}" class="ph-button" target="${target}">${buttonText}</a></div>`;
   const css = `
   .ph-button {
     background: linear-gradient(65deg,${colorOne},${colorTwo});
