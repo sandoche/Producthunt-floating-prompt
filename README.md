@@ -18,7 +18,7 @@ A few customization such as localstorage to appear only once, color, position ar
 ### Easy way (using the JSDelivr CDN)
 Just add this code to your html page:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/producthunt-floating-prompt/lib/producthunt-floating-prompt.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/producthunt-floating-prompt@1.0.6/lib/producthunt-floating-prompt.min.js"></script>
 <script>
   FloatingPrompt({name:'GitNews', url:'https://www.producthunt.com/posts/gitnews'});
 </script>
