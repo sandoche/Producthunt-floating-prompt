@@ -1,6 +1,6 @@
 {
   "name": "producthunt-floating-prompt",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "⚡️ Invite your users to support you on product hunt with this floating prompt",
   "main": "lib/producthunt-floating-prompt.js",
   "scripts": {
@@ -46,7 +46,7 @@
     "jsdom": "11.11.0",
     "jsdom-global": "3.0.2",
     "mocha": "^4.0.1",
-    "nyc": "^13.1.0",
+    "nyc": "^14.1.1",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.12.2",
     "webpack-cli": "^3.0.8",

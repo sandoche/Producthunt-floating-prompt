@@ -18,7 +18,7 @@ A few customization such as localstorage to appear only once, color, position ar
 ### Easy way (using the JSDelivr CDN)
 Just add this code to your html page:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/producthunt-floating-prompt/lib/producthunt-floating-prompt.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/producthunt-floating-prompt@1.0.7/lib/producthunt-floating-prompt.min.js"></script>
 <script>
   FloatingPrompt({name:'GitNews', url:'https://www.producthunt.com/posts/gitnews'});
 </script>
@@ -50,7 +50,8 @@ var options = {
   left: '32px', // default: unset - position from the left
   colorOne: 'red', // default: #da552f - first color of the gradient
   colorTwo: 'blue', // default: #ea8e39 - second color of the gradient
-  saveInCookies: false // default: true - if true it will use localStorage to appear only once
+  saveInCookies: false, // default: true - if true it will use localStorage to appear only once
+  target: '_parent' // default: '_blank' - target of the link
 }
 
 FloatingPrompt(options);
