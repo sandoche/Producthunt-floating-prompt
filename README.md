@@ -1,6 +1,10 @@
 ![Logo](logo.gif "Logo")
 
-# ProductHunt Floating Prompt ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+# ProductHunt Floating Prompt 
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](/LICENSE)
+[![Medium Badge](https://badgen.net/badge/icon/medium?icon=medium&label)](https://medium.com/@sandoche)
+[![Twitter: sandochee](https://img.shields.io/twitter/follow/sandochee.svg?style=social)](https://twitter.com/sandochee)
+
 
 ⚡️ Invite your users to support you on product hunt with this floating prompt (and mobile responsive).
 
