@@ -1,10 +1,12 @@
 ![Logo](logo.gif "Logo")
 
 # ProductHunt Floating Prompt 
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![License][license-src]][license-href]
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](/LICENSE)
 [![Medium Badge](https://badgen.net/badge/icon/medium?icon=medium&label)](https://medium.com/@sandoche)
 [![Twitter: sandochee](https://img.shields.io/twitter/follow/sandochee.svg?style=social)](https://twitter.com/sandochee)
-
 
 ⚡️ Invite your users to support you on product hunt with this floating prompt (and mobile responsive).
 
@@ -83,3 +85,10 @@ If you like this project, feel free to donate:
 * Ethereum: 0xded81fa4624e05339924355fe3504ba9587d5419
 * Monero: 43jqzMquW2q989UKSrB2YbeffhmJhbYb2Yxu289bv7pLRh4xVgMKj5yTd52iL6x1dvCYs9ERg5biHYxMjGkpSTs6S2jMyJn
 * Motive: MOTIV-25T5-SD65-V7LJ-BBWRD (Get Motive Now: https://motive.network)
+
+[npm-version-src]: https://img.shields.io/npm/v/producthunt-floating-prompt/latest.svg
+[npm-version-href]: https://npmjs.com/package/producthunt-floating-prompt
+[npm-downloads-src]: https://img.shields.io/npm/dt/producthunt-floating-prompt.svg
+[npm-downloads-href]: https://npmjs.com/package/producthunt-floating-prompt
+[license-src]: https://img.shields.io/npm/l/producthunt-floating-prompt.svg
+[license-href]: https://npmjs.com/package/producthunt-floating-prompt
