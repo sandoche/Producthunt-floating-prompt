@@ -40,6 +40,9 @@ import FloatingPrompt from 'producthunt-floating-prompt';
 FloatingPrompt({name:'GitNews', url:'https://www.producthunt.com/posts/gitnews'});
 ```
 
+### For Nuxt.js
+Use [nuxt-floating-prompt-module](https://github.com/sandoche/nuxt-floating-prompt-module) for Nuxt.js
+
 ## Options
 Here are the option availables:
 ```javascript
